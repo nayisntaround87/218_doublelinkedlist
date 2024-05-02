@@ -38,6 +38,26 @@ void addNode() {
     else {
         // insert the new node in the middle or at the end
         Node *current = START; // step 1.a: start from the first node
+        Node *previous = NULL; // step 1.b: previous node is NULL initially
+
+        while (current != NULL && current->noMhs < newNode->noMhs)
+        {                            // step 1.c: traverse the list to find the correct position
+            previous = current;      // step 1.d: move the previous to the current node
+            current = current->next; // step 1.e: move the current to the next mode
+        }
+
+        newNode->next = current; // step 4: make the next field of the new node point to current
+        newNode->prev = previous; // step 5: make the previous field of the new node point to previous
+
+        if (current != NULL)
+        {
+            current->prev = newNode; // step 6: make the previous field of the current node point to the new node
+        }
+
+        if (previous != NULL)
+        {
+            previous->next = newNode; // 
+        }
     }
 }
 
