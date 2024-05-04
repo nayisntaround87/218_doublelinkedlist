@@ -205,6 +205,8 @@ int main()
             cout << "3. view all records in the ascending order of roll numbers" << endl;
             cout << "4. view all records in the ascending order of roll numbers" << endl;
             cout << "5. search for a record in the list" << endl;
+            cout << "6. Exit" << endl;
+            cout << "\nEnter your choice (1-6): ";
 
         }
     }
