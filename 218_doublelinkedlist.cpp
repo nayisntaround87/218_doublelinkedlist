@@ -203,6 +203,8 @@ int main()
             cout << "1. Add a record to the list" << endl;
             cout << "2. Delete a record from the list" << endl;
             cout << "3. view all records in the ascending order of roll numbers" << endl;
+            cout << "4. view all records in the ascending order of roll numbers" << endl;
+            cout << "5. search for a record in the list" << endl;
 
         }
     }
